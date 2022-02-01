@@ -288,16 +288,20 @@ window.onload = function(){
 
   document.addEventListener("keydown", function(event){
     switch(event.keyCode){
-      case 37: //left
+    case 37: //left
+    case 65: // a
       pressing_left = true;
       break;
-      case 38: //up
+    case 38: //up
+    case 87: // w
       pressing_up = true;
       break;
-      case 39: //right
+    case 39: //right
+    case 68: // d
       pressing_right = true;
       break;
-      case 40: //down
+    case 40: //down
+    case 83: // s
       pressing_down = true;
       break;
       case 32:
@@ -308,16 +312,20 @@ window.onload = function(){
 
   document.addEventListener("keyup", function(event){
     switch(event.keyCode){
-      case 37:
+    case 37:
+    case 65:
       pressing_left = false;
       break;
-      case 38:
+    case 38:
+    case 87:
       pressing_up = false;
       break;
-      case 39:
+    case 39:
+    case 68:
       pressing_right = false;
       break;
-      case 40:
+    case 40:
+    case 83:      
       pressing_down = false;
       break;
       case 32:
